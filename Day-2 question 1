@@ -1,0 +1,30 @@
+/*Day 2 question 1
+check if string is palindrome or not 
+code:*/
+public class Main{
+    public boolean check(String s){
+            int left = 0;
+            int right = s.length()-1;
+            while(left<right){
+                if(s.charAt(left)!=s.charAt(right)){
+                    return false;
+                }
+                left++;
+                right--;
+                }
+                return true;
+            } 
+            
+        
+    public static void main(String[] args){
+        Main object = new Main();        
+        String test = "hannah";
+        if(object.check(test)){
+            System.out.println("palindrome");}
+        else{
+            System.out.println("no");
+        }
+
+            }
+
+            }
